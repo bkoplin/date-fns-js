@@ -9,10 +9,6 @@
   "license": "MIT",
   "description": "Modern JavaScript date utility library",
   "repository": "https://github.com/bkoplin/date-fns-js",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/date-fns"
-  },
   "engines": {
     "node": ">=0.11"
   },
