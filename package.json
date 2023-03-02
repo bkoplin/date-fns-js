@@ -1,5 +1,5 @@
 {
-  "name": "date-fns",
+  "name": "date-fns-js",
   "version": "DON'T CHANGE; IT'S SET AUTOMATICALLY DURING DEPLOYMENT; ALSO, USE YARN FOR DEVELOPMENT",
   "sideEffects": false,
   "contributors": [
@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "description": "Modern JavaScript date utility library",
-  "repository": "https://github.com/date-fns/date-fns",
+  "repository": "https://github.com/bkoplin/date-fns-js",
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/date-fns"
@@ -16,15 +16,12 @@
   "engines": {
     "node": ">=0.11"
   },
-  "typings": "./typings.d.ts",
-  "main": "index.js",
-  "module": "esm/index.js",
+  "typings": "./build/index.d.ts",
+  "main": "./build/index.js",
+  "browser": "./build/index.global.js",
+  "module": "./build/index.mjs.js",
   "scripts": {
-    "test": "karma start config/karma.js",
-    "lint": "eslint .",
-    "lint-types": "eslint --config=.ts-eslintrc.js typings.d.ts",
-    "locale-snapshots": "env TZ=utc babel-node --extensions .ts,.js ./scripts/build/localeSnapshots/index.js",
-    "stats": "cloc . --exclude-dir=node_modules,tmp,.git"
+    "build": "tsup"
   },
   "husky": {
     "hooks": {
@@ -42,7 +39,6 @@
     "> 1%",
     "IE 11"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
@@ -100,7 +96,10 @@
     "size-limit": "^0.21.0",
     "snazzy": "^7.0.0",
     "ts-node": "^10.8.1",
+    "tslib": "^2.5.0",
+    "tsup": "^6.6.3",
     "typescript": "^4.7.4",
+    "unbuild": "^1.1.2",
     "webpack": "4",
     "webpack-cli": "^3.1.2",
     "world-countries": "^1.8.1"
