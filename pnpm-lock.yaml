@@ -21,6 +21,7 @@ specifiers:
   babel-loader: 8.0.6
   babel-plugin-add-import-extension: ^1.4.3
   babel-plugin-add-module-exports: ^1.0.2
+  bumpp: ^9.0.0
   cloc: ^2.2.0
   coveralls: ^3.0.6
   eslint: ^7.27.0
@@ -86,6 +87,7 @@ devDependencies:
   babel-loader: 8.0.6_idmflsbzmivcz6fnnmcaipezqe
   babel-plugin-add-import-extension: 1.6.0_@babel+core@7.21.0
   babel-plugin-add-module-exports: 1.0.4
+  bumpp: 9.0.0
   cloc: 2.11.0
   coveralls: 3.1.1
   eslint: 7.32.0
@@ -2428,6 +2430,16 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@jsdevtools/ez-spawn/3.0.4:
+    resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
+    engines: {node: '>=10'}
+    dependencies:
+      call-me-maybe: 1.0.2
+      cross-spawn: 7.0.3
+      string-argv: 0.3.1
+      type-detect: 4.0.8
+    dev: true
+
   /@jsdoc/salty/0.2.4:
     resolution: {integrity: sha512-HRBmslXHM6kpZOfGf0o41NUlGYGER0NoUBcT2Sik4rxzAN7f7+si7ad57SFSFpftvaMVnUaY7YlJuv3v5G80ZA==}
     engines: {node: '>=v12.0.0'}
@@ -4311,6 +4323,18 @@ packages:
 
   /builtin-status-codes/3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
+    dev: true
+
+  /bumpp/9.0.0:
+    resolution: {integrity: sha512-I2+JLFQin46NioHg6wi23hYQMVExiJyGblARp5fIHUzLv3rRz9me38eUe2xlQCAl7Ys9X+SlhTaIkttTxiL6cQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jsdevtools/ez-spawn': 3.0.4
+      cac: 6.7.14
+      fast-glob: 3.2.12
+      prompts: 2.4.2
+      semver: 7.3.8
     dev: true
 
   /bundle-require/4.0.1_esbuild@0.17.10:
@@ -12770,6 +12794,11 @@ packages:
 
   /string-argv/0.0.2:
     resolution: {integrity: sha512-p6/Mqq0utTQWUeGMi/m0uBtlLZEwXSY3+mXzeRRqw7fz5ezUb28Wr0R99NlfbWaMmL/jCyT9be4jpn7Yz8IO8w==}
+    engines: {node: '>=0.6.19'}
+    dev: true
+
+  /string-argv/0.3.1:
+    resolution: {integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==}
     engines: {node: '>=0.6.19'}
     dev: true
 

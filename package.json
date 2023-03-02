@@ -1,6 +1,6 @@
 {
   "name": "date-fns-js",
-  "version": "DON'T CHANGE; IT'S SET AUTOMATICALLY DURING DEPLOYMENT; ALSO, USE YARN FOR DEVELOPMENT",
+  "version": "0.0.0",
   "sideEffects": false,
   "contributors": [
     "Sasha Koss <koss@nocorp.me>",
@@ -57,6 +57,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-add-import-extension": "^1.4.3",
     "babel-plugin-add-module-exports": "^1.0.2",
+    "bumpp": "^9.0.0",
     "cloc": "^2.2.0",
     "coveralls": "^3.0.6",
     "eslint": "^7.27.0",
