@@ -18,7 +18,10 @@
   "typings": "./build/index.d.ts",
   "main": "./build/index.js",
   "browser": "./build/index.global.js",
-  "module": "./build/index.mjs.js",
+  "module": "./build/index.mjs",
+  "files": [
+    "./build"
+  ],
   "scripts": {
     "build": "tsup"
   },

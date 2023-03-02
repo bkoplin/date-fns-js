@@ -23,6 +23,12 @@ var dateFns = (() => {
   var __toCommonJS = (mod) =>
     __copyProps(__defProp({}, '__esModule', { value: true }), mod)
 
+  // src/index.all.ts
+  var index_all_exports = {}
+  __export(index_all_exports, {
+    dateFns: () => src_exports,
+  })
+
   // src/index.ts
   var src_exports = {}
   __export(src_exports, {
@@ -6809,5 +6815,5 @@ var dateFns = (() => {
   function yearsToQuarters(years) {
     return Math.floor(years * quartersInYear)
   }
-  return __toCommonJS(src_exports)
+  return __toCommonJS(index_all_exports)
 })()
