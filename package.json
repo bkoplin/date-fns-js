@@ -1,6 +1,6 @@
 {
   "name": "@bkoplin/date-fns-js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "sideEffects": false,
   "contributors": [
     "Sasha Koss <koss@nocorp.me>",
