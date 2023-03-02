@@ -1,5 +1,5 @@
 {
-  "name": "date-fns-js",
+  "name": "@bkoplin/date-fns-js",
   "version": "0.0.0",
   "sideEffects": false,
   "contributors": [
@@ -9,6 +9,9 @@
   "license": "MIT",
   "description": "Modern JavaScript date utility library",
   "repository": "https://github.com/bkoplin/date-fns-js",
+  "publishConfig": {
+    "@bkoplin:registry": "https://npm.pkg.github.com"
+  },
   "engines": {
     "node": ">=0.11"
   },
